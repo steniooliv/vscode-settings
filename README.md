@@ -1,7 +1,7 @@
 # vscode-settings
 my vscode settings
 
-# extensions inside vscode
+# extensions install inside vscode
 - Dracula Official - dracula-theme.theme-dracula
 - Color Highlight - naumovs.color-highlight
 - Live Server - ritwickdey.liveserver
