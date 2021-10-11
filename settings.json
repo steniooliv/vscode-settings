@@ -1,58 +1,91 @@
 {
-    "git.autofetch": true,
-    "git.enableSmartCommit": true,
-    "git.confirmSync": false,
-    "workbench.colorTheme": "Dracula",
-    "workbench.iconTheme": "material-icon-theme",
-    "editor.minimap.enabled": false,
+	// Ativa o tema de cor Drácula
+	// Ativa o tema de ícones de pasta do Material Icon
+	// Deixa a barra de atividades habilitada e abre o VSCode com um arquivo em branco
+	"workbench.colorTheme": "Dracula",
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.activityBar.visible": true,
+  "workbench.startupEditor": "newUntitledFile",
 
-    "emmet.syntaxProfiles": {"javascript": "jsx"},
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact",
-        "nunjucks": "html",
-        "njk": "html",
-    },
+	// Desabilita o mini mapa do lado direito
+	// Troca o tamanho do tab de 4 para 2 espaços
+	// Desabilita as Dicas
+	// Ignora as recomendações
+	// Muda a fonte de texto para a Fira Code
+	// Habilita as fontes ligadas (combinações de caracteres em um único espaço)
+	// Configura o tamanho de fonte padrão para 14 pixels
+	// Configura o espaçamento da fonte para 16 pixels
+	"editor.minimap.enabled": false,
+	"editor.tabSize": 2,
+	"editor.parameterHints.enabled": false,
+	"editor.fontFamily": "Fira Code",
+	"editor.fontLigatures": true,
+	"editor.fontSize": 14,
+	"editor.lineHeight": 16,
 
-    "breadcrumbs.enabled": true,
-    "editor.tabSize": 2,
-    "workbench.startupEditor": "newUntitledFile",
+	// Desabilita a compactação de pastas vazias
+	// Desabilita a confirmação ao arrastar e soltar arquivos e pastas
+	// Desabilita a confirmação ao deletar um arquivo ou pasta
+	"explorer.compactFolders": false,
+	"explorer.confirmDragAndDrop": false,
+	"explorer.confirmDelete": false,
 
-    /*
-     *   Configurações personalizadas      
-     */
+	// Desabilita as recomendações
+	"extensions.ignoreRecommendations": true,
 
-    "editor.fontFamily": "Fira Code",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 14,
-    "editor.lineHeight": 16,
+	// Configura o tamanho de fonte do terminal para 12 pixels
+	"terminal.integrated.fontSize": 12,
 
-    // O caractere de fim de linha padrão.
-    //  - \n: LF
-    //  - \r\n: CRLF
-    //  - auto: Uses operating system specific end of line character.
-    "files.eol": "\n",
+// Configuração do emmet para React
+	"emmet.syntaxProfiles": {
+		"javascript": "jsx"
+	},
+	"emmet.includeLanguages": {
+		"javascript": "javascriptreact",
+		"html": "jsx"
+	},
 
-    // Configure glob patterns for excluding files and folders. For example, the files explorer decides which files and folders to show or hide based on this setting. Read more about glob patterns [here](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options).
-    "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/CVS": true,
-        "**/.DS_Store": true
-    },
+// Pastas e arquivos com nome "migrations" recebe o ícone de "tools"
+	"material-icon-theme.files.associations": {
+		"migrations": "tools",
+	},
+	"material-icon-theme.folders.associations": {
+		"migrations": "tools",
+		"repository": "database",
+		"repositories": "database"
+	},
+	
 
+// Sequência de fim de linha para LF (padrão Unix)
+	"files.eol": "\n",
 
-    "window.zoomLevel": 0,
-
-    "editor.parameterHints.enabled": false,
-
-    "javascript.suggest.autoImports": false,
-    "workbench.activityBar.visible": true,
-
-    "extensions.ignoreRecommendations": true,
-
-    "terminal.integrated.fontSize": 12,
-    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-
+// Arquivos excluídos para não serem mostrados na árvore de pastas
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true
+	},
+	"[dart]": {
+		"editor.formatOnSave": true,
+		"editor.formatOnType": true,
+		"editor.rulers": [
+			80
+		],
+		"editor.selectionHighlight": false,
+		"editor.suggest.snippetsPreventQuickSuggestions": false,
+		"editor.suggestSelection": "first",
+		"editor.tabCompletion": "onlySnippets",
+		"editor.wordBasedSuggestions": false
+	},
+	"terminal.integrated.tabs.location": "left",
+	"git.confirmSync": false,
+	"git.enableSmartCommit": true,
+	"dart.flutterSdkPaths": [
+		"C:\\SDK\\flutter1",
+		"C:\\SDK\\flutter2"
+	],
+	"dart.flutterSdkPath": "C:\\SDK\\flutter1",
 
 }
